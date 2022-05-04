@@ -1,0 +1,20 @@
+body {
+    width: 1000px;
+    margin: auto;
+    background-color:silver
+}
+section {
+    margin-top: 100px;
+    background-color:aliceblue;
+    display: flex;
+    padding: 10px;
+}
+div {
+    margin-top: 20px;
+}
+.second {
+    outline: 2px solid silver;
+}
+.second p, h2 {
+    padding:0px 20px 20px 20px;
+}
