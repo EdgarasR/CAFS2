@@ -1,0 +1,46 @@
+body {
+    width: 1000px;
+    margin: auto;
+}
+nav {
+    background-color: bisque;
+}
+nav ul {
+    float:right;
+}
+nav li {
+    display: inline-block;
+    padding: 25px;
+}
+main p, h1{
+    text-align: center;
+}
+section, footer {
+    background-color: bisque;
+    margin-top: 10px;
+    padding: 10px;
+}
+section img {
+    width: 480px;
+}
+footer {
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+footer li {
+    display: inline-block;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
