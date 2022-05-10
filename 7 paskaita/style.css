@@ -1,0 +1,7 @@
+#menu-1 a:hover {
+    cursor: pointer;
+    color: red;
+}
+#menu-1 a:link {
+    text-decoration: none;
+}
