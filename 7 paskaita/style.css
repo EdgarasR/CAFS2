@@ -73,3 +73,24 @@
 #menu-4 a:hover {
     color: red;
 }
+
+/* FIFTH */
+#menu-4 ul {
+    list-style: none;
+}
+#menu-4 li {
+    display: inline-block;
+}
+#menu-4 a {
+    border: 1px solid blue;
+    width: 100px;
+    margin: 10px 10px 0px 0px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+#menu-4 a:hover {
+    background-color: grey;
+    color: white;
+    border-color: black;
+}
