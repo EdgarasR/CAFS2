@@ -5,6 +5,7 @@
 #menu-1 li:hover {
     text-decoration: underline;
 }
-#menu-1 a:link {
+#menu-1 a:link, a:visited {
     text-decoration: none;
+    color: blue;
 }
