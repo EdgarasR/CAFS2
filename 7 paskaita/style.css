@@ -2,6 +2,9 @@
     cursor: pointer;
     color: red;
 }
+#menu-1 li:hover {
+    text-decoration: underline;
+}
 #menu-1 a:link {
     text-decoration: none;
 }
