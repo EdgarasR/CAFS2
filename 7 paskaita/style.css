@@ -1,4 +1,4 @@
-/* first menu */
+/* FIRST */
 #menu-1 a:hover {
     cursor: pointer;
     color: red;
@@ -12,7 +12,7 @@
 }
 
 
-/* second menu */
+/* SECOND */
 #menu-2 ul {
     list-style: none;
 }
@@ -30,7 +30,7 @@
     font-weight: bold;
 }
 
-/* third menu */
+/* THIRD */
 #menu-3 li {
     width: 200px;
     border: 1px solid grey;
