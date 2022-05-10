@@ -9,3 +9,19 @@
     text-decoration: none;
     color: blue;
 }
+#menu-2 ul {
+    list-style: none;
+}
+#menu-2 li {
+    width: 200px;
+    border: 1px solid blue;
+    margin: 10px 10px 0px 0px;
+    padding: 5px;
+}
+#menu-2 a:link, a:visited {
+    text-decoration: none;
+    color: blue;
+}
+#menu-2 a:hover {
+    font-weight: bold;
+}
