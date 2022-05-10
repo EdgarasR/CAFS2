@@ -29,3 +29,28 @@
 #menu-2 a:hover {
     font-weight: bold;
 }
+
+/* third menu */
+#menu-3 li {
+    width: 200px;
+    border: 1px solid grey;
+    margin: 10px 10px 0px 0px;
+    padding: 5px;
+    background-color: grey;
+}
+#menu-3 a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#menu-3 ul {
+    list-style: none;
+}
+#menu-3 li:hover {
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#menu-3 li:hover a {
+    color: black;
+}
