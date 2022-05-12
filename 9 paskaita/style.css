@@ -1,8 +1,3 @@
-.flex {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 .orange {
     width: 100%;
     background-color: orange;
