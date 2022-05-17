@@ -1,12 +1,151 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Task</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light container-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Bootstrap
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nav Menu 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nav Menu 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nav Menu 3</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container-xl">
+            <img src="https://assets.unenvironment.org/styles/article_billboard_image/s3/2021-05/alberta-2297204_1920.jpg" class="img-fluid" alt="main">
+            </div>
+        </section>
+        <section>
+            <div class="container-xl">
+                <div class="row justify-content-around mt-4">
+                    <div class="col col-lg-3 d-flex border border-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, animi? Nemo dolore pariatur voluptas.</div>
+                    <div class="col col-lg-3 d-flex border border-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, animi? Nemo dolore pariatur voluptas.</div>
+                    <div class="col col-lg-3 d-flex border border-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, animi? Nemo dolore pariatur voluptas.</div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-3">
+            <div class="container-xl">
+                <div class="d-grid mt-4 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Some random TEXT</button>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="card col-lg-3 mt-4">
+                        <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864%2C0%2C1728%2C2304&wid=600&hei=800&scl=2.88" class="card-img-top" alt="first">
+                        <div class="card-body">
+                            <h5 class="card-title">Nature 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864%2C0%2C1728%2C2304&wid=600&hei=800&scl=2.88" class="btn btn-primary" target="blank">Open full-size</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 mt-4">
+                        <img src="https://media.cntraveller.com/photos/611bf0b8f6bd8f17556db5e4/1:1/w_2000,h_2000,c_limit/gettyimages-1146431497.jpg" class="card-img-top" alt="second">
+                        <div class="card-body">
+                            <h5 class="card-title">Nature 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="https://media.cntraveller.com/photos/611bf0b8f6bd8f17556db5e4/1:1/w_2000,h_2000,c_limit/gettyimages-1146431497.jpg" class="btn btn-primary" target="blank">Open full-size</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 mt-4">
+                        <img src="https://th-thumbnailer.cdn-si-edu.com/vSnitgUqCQCRSx7mkHZtHZHry4U=/1072x720/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/04/8e/048ed839-a581-48af-a0ae-fac6fec00948/gettyimages-168346757_web.jpg" class="card-img-top" alt="third">
+                        <div class="card-body">
+                            <h5 class="card-title">Nature 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="https://th-thumbnailer.cdn-si-edu.com/vSnitgUqCQCRSx7mkHZtHZHry4U=/1072x720/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/04/8e/048ed839-a581-48af-a0ae-fac6fec00948/gettyimages-168346757_web.jpg" class="btn btn-primary" target="blank">Open full-size</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 mt-4">
+                        <img src="https://www.10wallpaper.com/wallpaper/medium/1410/Forest_Waterfall-HD_Desktop_Wallpaper_medium.jpg" class="card-img-top" alt="fourth">
+                        <div class="card-body">
+                            <h5 class="card-title">Nature 4</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="https://www.10wallpaper.com/wallpaper/medium/1410/Forest_Waterfall-HD_Desktop_Wallpaper_medium.jpg" class="btn btn-primary" target="blank">Open full-size</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-3">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col col-lg-6">
+                        <button type="button" class="btn btn-secondary col-lg-6 mt-4" disabled>Sign up</button>
+                        <div class="input-group mt-2 mb-3">
+                            <input type="text" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign up</button>
+                        </div>                          
+                    </div>
+                    <div class="col-12 col-lg-2 d-flex align-items-center border border-dark justify-content-center">
+                        Navigation text
+                    </div>
+                    <div class="col-12 col-lg-2 d-flex align-items-center border border-dark justify-content-center">
+                        Navigation text
+                    </div>
+                    <div class="col-12 col-lg-2 d-flex align-items-center border border-dark justify-content-center">
+                        Navigation text
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer class="container-xl bg-dark text-center text-white mb-3">
+            <div class="container p-4 pb-0">
+                <section class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-white" href="#">None</a>
+            </div>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
 </html>
