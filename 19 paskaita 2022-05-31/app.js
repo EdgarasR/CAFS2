@@ -5,7 +5,7 @@ function plus(a,b) {
     return a
 }
 
-console.log(plusPlus(4,5));
+console.log(plus(4,5));
 
 function plusRecursion(num, plus) {
     if (num == (num + plus)) {
@@ -18,3 +18,13 @@ function plusRecursion(num, plus) {
 }
 
 console.log(plusRecursion(4,11));
+
+function rFact(num) {
+    if (num === 0) {
+        return 1;
+    } else {
+        return num * rFact(num - 1);
+    }
+}
+
+console.log(rFact(4))
