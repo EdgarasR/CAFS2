@@ -1,3 +1,20 @@
+function addition(num1,num2) {
+    let result = num1 + num2;
+    return result;
+}
+function subtraction(num1,num2) {
+  let result = num1 - num2;
+  return result;
+}
+function multiplication(num1,num2) {
+  let result = num1 * num2;
+  return result;
+}
+function division(num1,num2) {
+  let result = num1 / num2;
+  return result;
+}
+
 let param = document.querySelector(".buttons");
 let screen = document.querySelector("#numberBox");
 let = screen.value = '';
@@ -24,22 +41,22 @@ param?.addEventListener('click', clr);
 function eql(e) {
     if(e.target.id === "equals") {
         if(screen.value.includes('+')) {
-            screen.value.split('');
+            // screen.value.split('');
             let num1 = Number(screen.value[0]);
             let num2 = Number(screen.value[2]);
-            let result = num1 + num2;
+            let result = addition(num1,num2);
             screen.value = result;
         }else if(screen.value.includes('-')) {
             screen.value.split('');
             let num1 = Number(screen.value[0]);
             let num2 = Number(screen.value[2]);
-            let result = num1 - num2;
+            let result = subtraction(num1,num2);
             screen.value = result;
         }else if(screen.value.includes('*')) {
             screen.value.split('');
             let num1 = Number(screen.value[0]);
             let num2 = Number(screen.value[2]);
-            let result = num1 * num2;
+            let result = multiplication(num1,num2);
             screen.value = result;
         }else if(screen.value.includes('/')) {
             screen.value.split('');
@@ -49,7 +66,7 @@ function eql(e) {
                   console.log('0 division');
                   return screen.value = `ERROR`;
               }
-            let result = num1 / num2;
+            let result = division(num1,num2);
             screen.value = result;
         }
     }
