@@ -41,25 +41,21 @@ param?.addEventListener('click', clr);
 function eql(e) {
     if(e.target.id === "equals") {
         if(screen.value.includes('+')) {
-            // screen.value.split('');
             let num1 = Number(screen.value[0]);
             let num2 = Number(screen.value[2]);
             let result = addition(num1,num2);
             screen.value = result;
         }else if(screen.value.includes('-')) {
-            screen.value.split('');
             let num1 = Number(screen.value[0]);
             let num2 = Number(screen.value[2]);
             let result = subtraction(num1,num2);
             screen.value = result;
         }else if(screen.value.includes('*')) {
-            screen.value.split('');
             let num1 = Number(screen.value[0]);
             let num2 = Number(screen.value[2]);
             let result = multiplication(num1,num2);
             screen.value = result;
         }else if(screen.value.includes('/')) {
-            screen.value.split('');
             let num1 = Number(screen.value[0]);
             let num2 = Number(screen.value[2]);
               if (num2 == 0) {
