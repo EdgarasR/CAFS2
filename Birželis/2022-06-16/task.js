@@ -16,3 +16,8 @@ div.appendChild(h2);
 div.appendChild(p1);
 div.appendChild(ul);
 div.appendChild(p2);
+
+div.style.background = 'yellow';
+div.style.padding = '10px';
+div.style.width = '300px';
+div.style.margin = 'auto';
