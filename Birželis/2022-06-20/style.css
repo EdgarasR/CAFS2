@@ -1,0 +1,42 @@
+section {
+    width: 100vw;
+}
+img {
+    height: 850px;
+    width: 100%;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+@keyframes fade {
+    from {opacity: 0.8} 
+    to {opacity: 1}
+}
+.slider-wrapper {
+    display: none;
+}
+#clock {
+    min-height: 300px;
+    width: 100%;
+    font-size: 200px;
+    text-align: center;
+}
+h2 {
+    padding-left: 20px;
+    font-size: 50px;
+}
+form {
+    padding: 20px;
+}  
+@media screen and (max-width: 700px) {
+    #clock {
+        font-size: 100px;
+        padding-top: 75px;
+    }
+}
+#message {
+    font-size: larger;
+    color: green;
+    padding-left: 20px;
+}
