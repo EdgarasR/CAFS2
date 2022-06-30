@@ -115,15 +115,15 @@ blueColor?.addEventListener('click', function(e) {
 
 redBorder?.addEventListener('click', function(e) {
     e.preventDefault();
-    changeText.style.border = '1px solid red';
+    changeText.style.outline = '1px solid red';
 });
 greenBorder?.addEventListener('click', function(e) {
     e.preventDefault();
-    changeText.style.border = '1px solid green';
+    changeText.style.outline = '1px solid green';
 });
 blueBorder?.addEventListener('click', function(e) {
     e.preventDefault();
-    changeText.style.border = '1px solid blue';
+    changeText.style.outline = '1px solid blue';
 });
 
 // CURSORS
@@ -157,6 +157,6 @@ crosshair?.addEventListener('click', function(e) {
 resetAll?.addEventListener('click', function(e) {
     e.preventDefault();
     changeText.style.color = 'black';
-    changeText.style.border = 'none';
+    changeText.style.outline = 'none';
     document.body.style.cursor = 'auto';
 })
