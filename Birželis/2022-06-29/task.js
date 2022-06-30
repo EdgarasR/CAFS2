@@ -98,63 +98,63 @@ let blueBorder = document.querySelector('#blueBorder');
 
 // COLORS
 
-redColor.addEventListener('click', function(e) {
+redColor?.addEventListener('click', function(e) {
     e.preventDefault();
     changeText.style.color = 'red';
 });
-greenColor.addEventListener('click', function(e) {
+greenColor?.addEventListener('click', function(e) {
     e.preventDefault();
     changeText.style.color = 'green';
 });
-blueColor.addEventListener('click', function(e) {
+blueColor?.addEventListener('click', function(e) {
     e.preventDefault();
     changeText.style.color = 'blue';
 });
 
 // BORDERS
 
-redBorder.addEventListener('click', function(e) {
+redBorder?.addEventListener('click', function(e) {
     e.preventDefault();
     changeText.style.border = '1px solid red';
 });
-greenBorder.addEventListener('click', function(e) {
+greenBorder?.addEventListener('click', function(e) {
     e.preventDefault();
     changeText.style.border = '1px solid green';
 });
-blueBorder.addEventListener('click', function(e) {
+blueBorder?.addEventListener('click', function(e) {
     e.preventDefault();
     changeText.style.border = '1px solid blue';
 });
 
 // CURSORS
 
-pointer.addEventListener('click', function(e) {
+pointer?.addEventListener('click', function(e) {
     e.preventDefault();
     document.body.style.cursor = 'pointer';
     console.log('POINTER');
 });
-textCursor.addEventListener('click', function(e) {
+textCursor?.addEventListener('click', function(e) {
     e.preventDefault();
     document.body.style.cursor = 'text';
     console.log('TEXT');
 });
-copy.addEventListener('click', function(e) {
+copy?.addEventListener('click', function(e) {
     e.preventDefault();
     document.body.style.cursor = 'copy';
     console.log('COPY');
 });
-help.addEventListener('click', function(e) {
+help?.addEventListener('click', function(e) {
     e.preventDefault();
     document.body.style.cursor = 'help';
     console.log('HELP');
 });
-crosshair.addEventListener('click', function(e) {
+crosshair?.addEventListener('click', function(e) {
     e.preventDefault();
     document.body.style.cursor = 'crosshair';
     console.log('CROSSHAIR');
 });
 
-resetAll.addEventListener('click', function(e) {
+resetAll?.addEventListener('click', function(e) {
     e.preventDefault();
     changeText.style.color = 'black';
     changeText.style.border = 'none';
