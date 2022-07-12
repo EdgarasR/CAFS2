@@ -21,20 +21,17 @@ document.querySelector("button")?.addEventListener("click", async function () {
 
   for (let post of posts) {
     let createTr = document.createElement("tr");
-    let createName = document.createElement("td");
+    let createUserID = document.createElement("td");
     let createID = document.createElement("td");
-    let createUsername = document.createElement("td");
-    let createEmail = document.createElement("td");
+    let createTitle = document.createElement("td");
 
     createID.textContent = post.id;
-    createUsername.textContent = post.username;
-    createName.textContent = post.name;
-    createEmail.textContent = post.email;
+    createUserID.textContent = post.userid;
+    createTitle.textContent = post.title;
 
     createTr.appendChild(createID);
-    createTr.appendChild(createName);
-    createTr.appendChild(createUsername);
-    createTr.appendChild(createEmail);
+    createTr.appendChild(createUserID);
+    createTr.appendChild(createTitle);
     table.appendChild(createTr);
   }
 });
