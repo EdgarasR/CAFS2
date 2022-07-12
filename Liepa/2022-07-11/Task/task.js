@@ -22,17 +22,17 @@ document.querySelector('button')?.addEventListener('click', async function() {
     
         for (let post of posts) {
             let createTr = document.createElement('tr');
-            let createTdID = document.createElement('td');
-            let createTdUserID = document.createElement('td');
-            let createTdTitle = document.createElement('td');
+            let createID = document.createElement('td');
+            let createUserID = document.createElement('td');
+            let createTitle = document.createElement('td');
     
-            createTdID.textContent = post.id;
-            createTdUserID.textContent = post.userId;
-            createTdTitle.textContent = post.title;
+            createID.textContent = post.id;
+            createUserID.textContent = post.userId;
+            createTitle.textContent = post.title;
     
-            createTr.appendChild(createTdID);
-            createTr.appendChild(createTdUserID);
-            createTr.appendChild(createTdTitle);
+            createTr.appendChild(createID);
+            createTr.appendChild(createUserID);
+            createTr.appendChild(createTitle);
             table.appendChild(createTr);
         };
 });
