@@ -18,7 +18,7 @@ app.get("/cpu", function (req, res) {
 });
 
 app.get("/ram", function (req, res) {
-  res.send({ RAM: `${os.totalmem() / (1024 * 1024)} MB` });
+  res.send({ RAM: `${Math.floor(os.totalmem() / (1024 * 1024))} MB` });
 });
 
 app.listen(8080);
