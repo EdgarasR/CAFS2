@@ -12,9 +12,11 @@ app.get("/os", function (req, res) {
     Version: os.version(),
   });
 });
+
 app.get("/cpu", function (req, res) {
   res.send(os.cpus());
 });
+
 app.get("/ram", function (req, res) {
   res.send({ RAM: `${os.totalmem() / (1024 * 1024)} MB` });
 });
