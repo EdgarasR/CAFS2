@@ -9,6 +9,7 @@ app.get("/os", function (req, res) {
     Type: os.type(),
     Release: os.release(),
     Platform: os.platform(),
+    Version: os.version(),
   });
 });
 app.get("/cpu", function (req, res) {
