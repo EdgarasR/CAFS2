@@ -14,7 +14,7 @@ app.get("/os", function (req, res) {
 });
 
 app.get("/cpu", function (req, res) {
-  res.send({ CPU: os.cpus()[0], Cores: os.cpus().length });
+  res.send({ CPU: os.cpus()[0].model, Cores: os.cpus().length });
 });
 
 app.get("/ram", function (req, res) {
