@@ -48,13 +48,7 @@ $langLT = 'lt';
 
 $todayWithLang = function($lang) use($weekDays)
 {
-    if($lang == 'en')
-    {
-        return $weekDays['en'][date('N')];
-    } else 
-    {
-        return $weekDays['lt'][date('N')];
-    }
+    return $weekDays[$lang][date('N')];
 };
 
 print_r($todayWithLang($langEN));
