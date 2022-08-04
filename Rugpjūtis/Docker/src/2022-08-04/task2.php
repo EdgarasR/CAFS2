@@ -57,7 +57,7 @@ $todayWithLang = function($lang) use($weekDays)
     }
 };
 
-print_r($todayWithLang($langLT));
+print_r($todayWithLang($langEN));
 
 ?>
 </pre>
