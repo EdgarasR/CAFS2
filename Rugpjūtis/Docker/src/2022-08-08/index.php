@@ -24,8 +24,5 @@ require_once 'index.phtml';
 
 if (isset($msg['success'])) 
 {
-    echo '<pre>';
     print_r($_POST);
-    echo '</pre>';
-
 }
