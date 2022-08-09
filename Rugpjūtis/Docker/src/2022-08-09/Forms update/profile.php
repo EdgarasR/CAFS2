@@ -13,12 +13,12 @@
         <img src="photos/photo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h4 class="card-title">Profilio informacija</h4>
-                <p><?php echo $_POST['info'] ?></p>
+                <p><?php echo $_POST['info']; ?></p>
             </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Vardas: <?php echo $_POST['name']?></li>
-            <li class="list-group-item">Pavardė: <?php echo $_POST['lastname']?></li>
-            <li class="list-group-item">Miestas: <?php echo $_POST['city']?></li>
+            <li class="list-group-item">Vardas: <?php echo $_POST['name'];?></li>
+            <li class="list-group-item">Pavardė: <?php echo $_POST['lastname'];?></li>
+            <li class="list-group-item">Miestas: <?php echo $_POST['city'];?></li>
             <li class="list-group-item">Programavimo kalbos: <?php foreach($_POST['language'] as $lang): echo $lang . ' '; endforeach; ?></li>
         </ul>
         </div>

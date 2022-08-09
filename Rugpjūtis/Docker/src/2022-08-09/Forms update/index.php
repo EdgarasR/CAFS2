@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ERROR | E_PARSE);
 require_once 'variables.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
@@ -26,9 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
             } while (file_exists($path));
 
             move_uploaded_file($file['tmp_name'], $path);
-            echo "OK";
         }
+    require_once 'profile.php';
     }
+}else {
+    require_once 'index.phtml';
 }
-
-require_once 'index.phtml';

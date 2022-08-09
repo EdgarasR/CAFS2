@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Registracija į kursus</h1>
         <hr>
-        <form action="profile.php" method="POST" enctype="multipart/form-data">
+        <form action="index.php" method="POST" enctype="multipart/form-data">
             <p>Vardas: 
                 <input type="text" name="name" value="<?php echo isset($msg['error']) && isset($_POST['name']) ? $_POST['name'] : ''; ?>")>
             </p>
