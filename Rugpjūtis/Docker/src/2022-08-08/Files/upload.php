@@ -17,8 +17,8 @@ function generateRandomString($length = 10) {
 
 if(isset($_FILES['some-file-name'])) {
     $file = $_FILES['some-file-name'];
-
-    if($file['error'] == UPLOAD_ERR_OK) {
+    var_dump($file['error']);
+    if($file['error'] == 0) {
         $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
         $ext = strtolower($ext);
 
