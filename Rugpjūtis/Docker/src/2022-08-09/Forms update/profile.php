@@ -13,6 +13,7 @@
         <img src="photos/photo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h4 class="card-title">Profilio informacija</h4>
+                <p><?php echo $_POST['info'] ?></p>
             </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Vardas: <?php echo $_POST['name']?></li>
