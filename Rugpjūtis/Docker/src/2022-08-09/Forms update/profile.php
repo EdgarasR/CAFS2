@@ -18,6 +18,7 @@
             <li class="list-group-item">Vardas: <?php echo $_POST['name']?></li>
             <li class="list-group-item">Pavardė: <?php echo $_POST['lastname']?></li>
             <li class="list-group-item">Miestas: <?php echo $_POST['city']?></li>
+            <li class="list-group-item">Programavimo kalbos: <?php foreach($_POST['language'] as $lang): echo $lang . ' '; endforeach; ?></li>
         </ul>
         </div>
     </div>
