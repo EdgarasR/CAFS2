@@ -1,6 +1,6 @@
 <?php
 
-$csvFilePath = 'excelFile.csv';
+$csvFilePath = 'Excels/excelFile.csv';
 $apiUrl = 'https://randomuser.me/api/';
 
 // https://stackoverflow.com/questions/526556/how-to-flatten-a-multi-dimensional-array-to-simple-one-in-php
