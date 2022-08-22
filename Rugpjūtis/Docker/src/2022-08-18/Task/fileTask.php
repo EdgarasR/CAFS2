@@ -1,9 +1,5 @@
 <?php
 
-$csvFilePath = 'Excels/excelFile.csv';
-$apiUrl = 'https://randomuser.me/api/';
-
-// https://stackoverflow.com/questions/526556/how-to-flatten-a-multi-dimensional-array-to-simple-one-in-php
 function flatten($array, $prefix = '') {
     $result = [];
 
@@ -19,7 +15,7 @@ function flatten($array, $prefix = '') {
 }
 
 try {
-    $data = json_decode(file_get_contents($apiUrl), true);
+    $data = json_decode(file_get_contents('https://randomuser.me/api/'), true);
 
     if (isset($data) && array_key_exists('results', $data)) {
         $flatData = [];
@@ -28,18 +24,17 @@ try {
             $flatData[] = flatten($line);
         }
 
-        $file = fopen($csvFilePath, 'w');
+        $file = fopen('Excels/excelFile.csv', 'w');
 
         foreach ($flatData as $line) {
             fputcsv($file, array_keys($line));
-            $headerSaved = true;
 
             fputcsv($file, array_values($line));
         }
 
         fclose($file);
 
-        echo "Info from '{$apiUrl}' saved to '{$csvFilePath}'";
+        echo "Info from 'https://randomuser.me/api/' saved to 'Excels/excelFile.csv'";
         exit;
     } else {
         throw new Exception('No data.');
