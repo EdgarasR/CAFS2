@@ -6,17 +6,17 @@
 
 // convert - straight
 
-// $data = file_get_contents('https://randomuser.me/api/?results=5');
-// $data = json_decode($data, TRUE);
+$data = file_get_contents('https://randomuser.me/api/?results=5');
+$data = json_decode($data, TRUE);
 
-// $fp = fopen('Excels/convert-straight.csv', 'w');
-// foreach($data['results'] as $values) {
-//     $values = array_map(function($value) {
-//         return is_array($value) ? json_encode($value) : $value;
-//     }, $values);
-//     fputcsv($fp, $values);
-// }
-// fclose($fp);
+$fp = fopen('Excels/convert-straight.csv', 'w');
+foreach($data['results'] as $values) {
+    $values = array_map(function($value) {
+        return is_array($value) ? json_encode($value) : $value;
+    }, $values);
+    fputcsv($fp, $values);
+}
+fclose($fp);
 
 // convert - recursive
 
