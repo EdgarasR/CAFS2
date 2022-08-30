@@ -1,7 +1,8 @@
 <?php
 
-if (!empty($_POST)) {
-    file_put_contents('./data/user.php', print_r($_POST['results'], true));
-} else {
-    echo 'Fail';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $json = json_decode(file_get_contents('php://input'), true);
+    $file = fopen('./data/'. $json['results'][0]['name']['first'] . '.json', "w");
+    fwrite($file, json_encode($_POST));
+    fclose($file);
 }
