@@ -16,6 +16,6 @@ class Name
 
     public function greetings(): string
     {
-        return "Sveiki, mano vardas yra " . $this->firstName;
+        return "Sveiki, mano vardas yra " . $this->getName();
     }
 }
