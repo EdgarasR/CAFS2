@@ -13,14 +13,14 @@ class Person
         $this->setAge($age);
     }
 
-    public function setFirstName(string $name): void
+    public function setFirstName(string $firstName): void
     {
-        $this->firstName = $name;
+        $this->firstName = $firstName;
     }
 
-    public function setLastName(string $name): void
+    public function setLastName(string $lastName): void
     {
-        $this->lastName = $name;
+        $this->lastName = $lastName;
     }
 
     public function setAge(int $age): void
