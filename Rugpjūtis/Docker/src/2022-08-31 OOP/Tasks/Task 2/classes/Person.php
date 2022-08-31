@@ -50,6 +50,6 @@ class Person
 
     public function getPerson(): string
     {
-        return 'Persons first and last name: ' . $this->getFullName() . ', ' . 'and age: ' . $this->getAge() . '.';
+        return sprintf('Persons first and last name: %s, and age: %d.', $this->getFullName(), $this->getAge());
     }
 }
