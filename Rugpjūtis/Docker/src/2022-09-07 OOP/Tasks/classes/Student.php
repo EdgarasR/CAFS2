@@ -4,12 +4,12 @@ require_once __DIR__ . '/User.php';
 
 class Student extends User
 {
-    private $kursas = 4;
-    private $stipendija = 300;
+    private $course = 4;
+    private $scholarship = 300;
 
-    private function student()
+    public function getInfo()
     {
-        echo $this->$kursas;
-        echo $this->$stipendija;
+        echo $this->$course;
+        echo $this->$scholarship;
     }
 }
