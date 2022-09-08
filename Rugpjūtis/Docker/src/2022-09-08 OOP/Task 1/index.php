@@ -8,6 +8,8 @@ require_once __DIR__ . '/classes/Motorcycle.php';
 require_once __DIR__ . '/classes/Plane.php';
 require_once __DIR__ . '/classes/Cars/Bmw.php';
 
+try {
+
 $vehicles =
 [
     new Boat('Boat Maker', 'Boat Model', 2015),
@@ -21,4 +23,8 @@ $vehicles =
 foreach ($vehicles as $vehicle)
 {
     echo sprintf("Vehicle %s is %s.\n", $vehicle->getIntroduction(), $vehicle->getAgeText());
+}
+
+}catch(Exception $e){
+    var_dump($e->getMessage());
 }
