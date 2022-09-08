@@ -28,9 +28,9 @@ class Vehicle
     {
         if($this->getAge() <= 10)
         {
-            return sprintf('10 years or newer');
+            return sprintf('10 years old or newer');
         } else {
-            return sprintf('11 years or older');
+            return sprintf('11 years or old older');
         }
     }
 
