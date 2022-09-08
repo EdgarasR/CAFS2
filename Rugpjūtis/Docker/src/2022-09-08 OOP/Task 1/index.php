@@ -23,6 +23,7 @@ $vehicles =
 foreach ($vehicles as $vehicle)
 {
     echo sprintf("Vehicle %s is %s. Wheels: %s\n", $vehicle->getIntroduction(), $vehicle->getAgeText(), $vehicle->getWheelsNumberText());
+    echo "<br>";
 }
 
 }catch(Exception $e){
