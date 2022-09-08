@@ -36,7 +36,7 @@ class Vehicle
 
     public function getWheelsNumber() : int
     {
-        return $this->wheels;
+        return $this->wheels ?? 0;
     }
 
     public function getWheelsNumberText() : string
