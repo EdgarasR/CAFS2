@@ -2,11 +2,11 @@
 
 class Vehicle
 {
-    function __construct(string $make, string $model, int $year)
+    function __construct(protected string $make, protected string $model, protected int $year)
     {
-        $this->make = $make;
-        $this->model = $model;
-        $this->year = $year;
+       $this->make = $make;
+       $this->model = $model;
+       $this->year = $year;
     }
 
     public function setWheelsNumber(int $wheels) : void

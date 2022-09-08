@@ -5,7 +5,7 @@ class Bus extends Vehicle
     function __construct(string $make, string $model, int $year, int $wheels)
     {
         parent::__construct($make, $model, $year);
-        $this->wheels = $wheels;
+        $this->setWheelsNumber($wheels);
     }
 
     public function getFuelType() : array
