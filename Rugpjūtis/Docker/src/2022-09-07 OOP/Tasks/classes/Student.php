@@ -9,8 +9,8 @@ class Student extends User
     public function __construct(string $name, string $age, string $course, float $scholarship)
     {
         parent::__construct($name, $age);
-        $this->course = $course;
-        $this->scholarship = $scholarship;
+        $this->setCourse($course);
+        $this->setScholarship($scholarship);
     }
     public function getCourse() : string
     {
@@ -26,6 +26,6 @@ class Student extends User
     }
     public function setScolarship(float $scholarship) : void
     {
-        $this->scolarship = $scholarship;
+        $this->scholarship = $scholarship;
     }
 }

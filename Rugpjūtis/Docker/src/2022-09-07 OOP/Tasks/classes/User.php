@@ -2,13 +2,13 @@
 
 class User
 {
-    public string $name;
-    public string $age;
+    protected string $name;
+    protected string $age;
 
     function __construct(string $name, string $age)
     {
-        $this->name = $name;
-        $this->age = $age;
+        $this->setName($name);
+        $this->setAge($age);
     }
     public function getName() : string
     {
