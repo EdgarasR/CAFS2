@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . '/Vehicle.php';
-
 class Plane extends Vehicle
 {
     function __construct(string $make, string $model, int $year, int $wheels)

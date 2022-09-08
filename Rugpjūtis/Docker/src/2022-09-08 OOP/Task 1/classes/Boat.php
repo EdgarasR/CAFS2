@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . '/Vehicle.php';
-
 class Boat extends Vehicle
 {
     public function getWheelsNumberText() : string
