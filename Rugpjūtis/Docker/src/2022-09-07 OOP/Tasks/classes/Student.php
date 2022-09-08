@@ -12,19 +12,19 @@ class Student extends User
         $this->course = $course;
         $this->scholarship = $scholarship;
     }
-    public function getCourse () : string
+    public function getCourse() : string
     {
         return $this->course;
     }
-    public function getScolarship () : float
+    public function getScolarship() : float
     {
         return $this->scolarship;
     }
-    public function setCourse (string $course) : void
+    public function setCourse(string $course) : void
     {
         $this->course = $course;
     }
-    public function setScolarship (float $scholarship) : void
+    public function setScolarship(float $scholarship) : void
     {
         $this->scolarship = $scholarship;
     }
