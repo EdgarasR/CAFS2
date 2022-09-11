@@ -1,7 +1,7 @@
 <?php
 
 class User {
-    
+
     protected $name;
     protected $age;
 
@@ -15,14 +15,17 @@ class User {
     {
         $this->name = $name;
     }
-    public function setAge(int $age) : void
-    {
-        $this->age = $age;
-    }
+
     public function getName() : string
     {
         return $this->name;
     }
+    
+    public function setAge(int $age) : void
+    {
+        $this->age = $age;
+    }
+
     public function getAge() : int
     {
         return $this->age;

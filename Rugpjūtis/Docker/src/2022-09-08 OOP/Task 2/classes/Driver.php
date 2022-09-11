@@ -11,6 +11,11 @@ class Driver extends Worker
         $this->experience = $experience;
     }
 
+    public function getExperience() : string|int
+    {
+        return $this->experience;
+    }
+
     public function setCategory(array|string $category) : void
     {
         if(in_array($category, self::$allowedCategories))
@@ -25,10 +30,4 @@ class Driver extends Worker
     {
         return $this->category;
     }
-
-    public function getExperience() : string|int
-    {
-        return $this->experience;
-    }
-
 }
