@@ -2,7 +2,7 @@
 
 abstract class Person
 {
-    function __construct(string $name)
+    function __construct(private string $name)
     {
         $this->name = $name;
     }
