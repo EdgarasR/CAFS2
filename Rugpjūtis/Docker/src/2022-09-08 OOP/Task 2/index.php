@@ -1,7 +1,5 @@
 <?php
 
-try {
-
 require_once __DIR__ . '/classes/User.php';
 require_once __DIR__ . '/classes/Student.php';
 require_once __DIR__ . '/classes/Worker.php';
@@ -19,8 +17,3 @@ $driver->setSalary(3500);
 
 var_dump($student);
 var_dump($driver);
-
-}
-catch (Exception $e) {
-    echo $e->getMessage(), "\n", "Error code: ", "\n", $e->getCode();
-}
