@@ -3,7 +3,7 @@
 class Driver extends Worker
 {
     protected $experience;
-    protected $category;
+    protected $categories;
 
     public function setExperience(string|int $experience) : void
     {
@@ -15,13 +15,13 @@ class Driver extends Worker
         return $this->experience;
     }
 
-    public function setCategory(array|string $category) : void
+    public function setCategories(array|string $categories) : void
     {
-            $this->category = $category;
+            $this->categories = $categories;
     }
 
-    public function getCategory() : array|string
+    public function getCategories() : array|string
     {
-        return $this->category;
+        return $this->categories;
     }
 }

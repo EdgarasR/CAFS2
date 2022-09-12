@@ -1,11 +1,8 @@
 <?php
 
-class User {
-
-    protected $name;
-    protected $age;
-
-    public function __construct(string $name, int $age)
+class User 
+{
+    public function __construct(protected string $name, protected int $age)
     {
         $this->setName($name);
         $this->setAge($age);
