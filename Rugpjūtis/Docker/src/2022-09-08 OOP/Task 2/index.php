@@ -14,7 +14,7 @@ $student->setScholarship('500');
 $student->setCourse(3);
 
 $driver->setExperience('26 metai');
-$driver->setCategory(['C']);
+$driver->setCategory('C');
 $driver->setSalary(3500);
 
 var_dump($student);
