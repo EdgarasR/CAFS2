@@ -9,6 +9,6 @@ class Student extends Person
 
     public function greetings(): string
     {
-        return sprintf("Hello, i'm %s.", $this->name);
+        return sprintf("Hello, i'm %s.", $this->getName());
     }
 }
