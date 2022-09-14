@@ -1,4 +1,4 @@
-Namespace + Interface [PHP]
+# Namespace + Interface [PHP]
 
 Žemiau pateiktas kodo pavyzdys. Reikia sukurti visas trūkstamas klases bei vieną nenurodytą interface Messenger, kuris turi privalomą metodą „send“, kurį turi implementuoti kiekvienas iš messenger‘io servisų.
 
@@ -9,6 +9,7 @@ Atkreipkite dėmesį, kad kievienas messenger‘io servisas priima skirtingo bū
 P.S.
 Tai yra pseudo-kodas, realus siuntimo SMS ar į Facebook nereikia daryt. Kodas turi pasileisti be klaidų ir grąžinti išsiųsto pranešimo rezultatą.
 
+```
 <?php
 
 $text = 'Hello World';
@@ -31,3 +32,4 @@ $facebookConnector = new Connectors\FacebookConnector($facebookAppName, $faceboo
 
 $facebookMessenger = new Services\Messengers\FacebookMessengerService($facebookConnector);
 $facebookMessenger->send(4, $text);
+```
