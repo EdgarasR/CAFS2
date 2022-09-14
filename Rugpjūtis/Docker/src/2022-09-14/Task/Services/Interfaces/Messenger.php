@@ -2,7 +2,7 @@
 
 namespace Services\Messengers;
 
-interface Send
+interface Messenger
 {
     public function send(string $receiver, string $text): string;
 }

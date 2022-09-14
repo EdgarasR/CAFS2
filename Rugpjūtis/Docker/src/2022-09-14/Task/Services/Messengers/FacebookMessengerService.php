@@ -4,7 +4,7 @@ namespace Services\Messengers;
 
 use Connectors\FacebookConnector;
 
-class FacebookMessengerService implements Send
+class FacebookMessengerService implements Messenger
 {
     function __construct(private FacebookConnector $connector)
     {

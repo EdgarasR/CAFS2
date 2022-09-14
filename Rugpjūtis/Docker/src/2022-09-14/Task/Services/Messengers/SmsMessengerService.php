@@ -2,7 +2,7 @@
 
 namespace Services\Messengers;
 
-class SmsMessengerService implements Send
+class SmsMessengerService implements Messenger
 {
     public function send(string $receiver, string $text): string
     {
