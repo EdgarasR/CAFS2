@@ -6,7 +6,7 @@ use Connectors\FacebookConnector;
 
 class FacebookMessengerService implements Send
 {
-    function __construct(FacebookConnector $connector)
+    function __construct(private FacebookConnector $connector)
     {
         $this->setConnector($connector);
     }
