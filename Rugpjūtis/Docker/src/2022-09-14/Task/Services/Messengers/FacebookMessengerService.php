@@ -16,7 +16,7 @@ class FacebookMessengerService implements Send
         $this->connector = $connector;
     }
 
-    public function send($receiver, $text)
+    public function send(string $receiver, string $text)
     {
         echo sprintf("Message \"%s\" sent to %s <br>", $text, $receiver);
     }
