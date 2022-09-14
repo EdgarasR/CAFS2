@@ -2,7 +2,7 @@
 
 namespace Services\Messengers;
 
-class EmailMessengerService
+class EmailMessengerService implements Send
 {
     function __construct(private string $host, private string $username, private string $password)
     {
