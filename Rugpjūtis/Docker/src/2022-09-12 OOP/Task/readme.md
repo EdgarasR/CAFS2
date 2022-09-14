@@ -1,4 +1,4 @@
-Abstraction [PHP]
+# Abstraction [PHP]
 
 Sukurkite abstrakčią klasę Person, kuri priimtų konstruktoriuje vardą ir turetų abstrakų metodą greetings
 
