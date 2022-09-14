@@ -10,12 +10,10 @@ $username = 'testtest@gmail.com';
 $password = 'testtest';
 
 $emailMessenger = new Services\Messengers\EmailMessengerService($host, $username, $password);
-echo $emailMessenger->send('hello@nonamez.name', $text);
-echo "<br>";
+$emailMessenger->send('hello@nonamez.name', $text);
 
 $smsMessager = new Services\Messengers\SmsMessengerService();
-echo $smsMessager->send('+37061234567', $text);
-echo "<br>";
+$smsMessager->send('+37061234567', $text);
 
 $facebookAppName = 'test-name';
 $facebookAppKey  = '';
@@ -23,5 +21,5 @@ $facebookAppKey  = '';
 $facebookConnector = new Connectors\FacebookConnector($facebookAppName, $facebookAppKey);
 
 $facebookMessenger = new Services\Messengers\FacebookMessengerService($facebookConnector);
-echo $facebookMessenger->send(4, $text);
+$facebookMessenger->send(4, $text);
 

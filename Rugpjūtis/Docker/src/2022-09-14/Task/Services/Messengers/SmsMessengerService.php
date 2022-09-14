@@ -4,8 +4,8 @@ namespace Services\Messengers;
 
 class SmsMessengerService implements Send
 {
-    public function send($receiver, $text): string
+    public function send($receiver, $text)
     {
-        return sprintf("Message \"%s\" sent to %s", $text, $receiver);
+        echo sprintf("Message \"%s\" sent to %s", $text, $receiver);
     }
 }
