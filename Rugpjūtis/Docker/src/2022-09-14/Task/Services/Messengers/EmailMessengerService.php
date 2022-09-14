@@ -28,6 +28,6 @@ class EmailMessengerService
 
     public function send($receiver, $text)
     {
-        echo sprintf("Message \"%s\" sent to %s", $text, $receiver);
+        echo sprintf("Message \"%s\" sent to %s <br>", $text, $receiver);
     }
 }
