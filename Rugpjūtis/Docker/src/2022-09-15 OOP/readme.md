@@ -2,7 +2,7 @@
 
 Parašykyte HTML formos ir mažiausiai 5 elementų generatorių. Panaudokite bent kelis namespace ir traits.
 
-```
+```php
 <?php
 
 $form = new FormBuilder;
