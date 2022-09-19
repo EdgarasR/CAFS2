@@ -12,12 +12,12 @@ class Tag
         $this->tagName = $tagName;
     }
 
-    public function get()
+    public function get(): string
     {
         return sprintf('<%s %s="%s">%s</%s>', $this->tagName, $this->attribute, $this->value, $this->text, $this->tagName);
     }
 
-    public function show()
+    public function show(): string
     {
         return htmlentities(sprintf('<%s %s="%s">%s</%s>', $this->tagName, $this->attribute, $this->value, $this->text, $this->tagName));
     }
