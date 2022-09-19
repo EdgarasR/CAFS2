@@ -1,9 +1,9 @@
 <?php
 
-namespace App\classes;
+namespace App\Classes;
 
-use App\traits\Buttons;
-use App\traits\Elements;
+use App\Traits\Buttons;
+use App\Traits\Elements;
 
 class FormBuilder
 {

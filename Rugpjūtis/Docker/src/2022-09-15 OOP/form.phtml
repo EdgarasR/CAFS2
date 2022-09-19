@@ -27,11 +27,11 @@
         <div class="mb-3 col-3">
             <?php
                 echo $form->input('password', 'Enter password', '');
+                echo $form->password('Enter password');
             ?>
         </div>
         <div class="mb-3 col-4">
             <?php
-                echo $form->password('Enter password');
                 echo $form->textarea('Enter text');
                 echo $form->submit();
                 echo $form->close();

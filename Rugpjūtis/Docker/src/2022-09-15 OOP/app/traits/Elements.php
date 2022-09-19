@@ -1,6 +1,6 @@
 <?php
 
-namespace App\traits;
+namespace App\Traits;
 
 trait Elements
 {
@@ -11,7 +11,7 @@ trait Elements
 
     function input(string $type, string $placeholder, string $id): string
     {
-        return sprintf("<input type=\"%s\" class=\"form-control\" placeholder=\"%s\" id=\"%s\">", $type, $placeholder, $id);
+        return sprintf("<input type=\"%s\" class=\"form-control mt-2\" placeholder=\"%s\" id=\"%s\">", $type, $placeholder, $id);
     }
 
     // Koks tikslas šito?
@@ -22,6 +22,6 @@ trait Elements
 
     function textarea(string $placeholder)
     {
-        return sprintf("<textarea placeholder=\"%s\" class=\"form-control mt-3\"></textarea>", $placeholder);
+        return sprintf("<textarea placeholder=\"%s\" class=\"form-control\"></textarea>", $placeholder);
     }
 }
