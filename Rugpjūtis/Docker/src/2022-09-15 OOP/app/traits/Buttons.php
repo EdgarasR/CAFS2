@@ -6,10 +6,6 @@ trait Buttons
 {
     public function open(string $action,string $method): string
     {
-        if($method !== 'POST')
-        {
-            $method = 'POST';
-        }
         return sprintf("<form action=\"%s\" method=\"%s\">", $action, $method);
     }
 
