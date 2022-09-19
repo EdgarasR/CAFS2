@@ -10,7 +10,7 @@ trait Methods
         return $this;
     }
 
-    public function setAttr(string $attribute, string $value): object
+    public function setAttr(string $attribute, mixed $value): object
     {
         $this->attribute = $attribute;
         $this->value = $value;
