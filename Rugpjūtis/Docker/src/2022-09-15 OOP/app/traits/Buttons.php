@@ -11,11 +11,7 @@ trait Buttons
 
     public function submit(): string
     {
-        if(empty($text))
-        {
-            $text = 'Submit';
-        }
-        return "<button class=\"btn btn-success mt-2\">$text</button>";
+        return "<button class=\"btn btn-success mt-2\">Submit</button>";
     }
 
     public function close(): string
