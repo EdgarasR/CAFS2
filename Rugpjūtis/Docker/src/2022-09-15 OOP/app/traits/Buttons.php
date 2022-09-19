@@ -9,7 +9,7 @@ trait Buttons
         return sprintf("<form action=\"%s\" method=\"%s\">", $action, $method);
     }
 
-    public function submit(string $submit): string
+    public function submit(): string
     {
         if(empty($text))
         {
