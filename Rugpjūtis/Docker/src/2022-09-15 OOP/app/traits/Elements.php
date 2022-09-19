@@ -22,6 +22,6 @@ trait Elements
 
     function textarea(string $placeholder)
     {
-        return sprintf("<textarea placeholder=\"%s\" class=\"form-control\"></textarea>", $placeholder);
+        return sprintf("<textarea placeholder=\"%s\" class=\"form-control mt-3\"></textarea>", $placeholder);
     }
 }
