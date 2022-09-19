@@ -14,11 +14,6 @@ trait Elements
         return sprintf("<input type=\"%s\" class=\"form-control\" placeholder=\"%s\" id=\"%s\">", $type, $placeholder, $id);
     }
 
-    function password(string $placeholder)
-    {
-        $this->input('password', $placeholder, '');
-    }
-
     function textarea(string $placeholder)
     {
         return sprintf("<textarea placeholder=\"%s\" class=\"form-control\"></textarea>", $placeholder);
