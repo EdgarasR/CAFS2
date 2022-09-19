@@ -14,7 +14,6 @@ trait Elements
         return sprintf("<input type=\"%s\" class=\"form-control mt-2\" placeholder=\"%s\" id=\"%s\">", $type, $placeholder, $id);
     }
 
-    // Koks tikslas šito?
     function password(string $placeholder)
     {
         return $this->input('password', $placeholder, '');
