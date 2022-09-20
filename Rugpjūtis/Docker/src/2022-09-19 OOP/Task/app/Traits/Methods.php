@@ -12,8 +12,7 @@ trait Methods
 
     public function setAttr(string $attribute, mixed $value): object
     {
-        $this->attribute = $attribute;
-        $this->value = $value;
+        $this->attr .= sprintf(' %s="%s"', $attribute, $value);
 
         return $this;
     }
