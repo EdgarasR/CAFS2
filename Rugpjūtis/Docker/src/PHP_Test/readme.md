@@ -7,3 +7,4 @@
 - Uždarius naršyklę testo viduryje grižus turėtų būti gslimybė spręsti toliau.
 
 Trumpai tariant reikia padaryti primitivią klausymų/atsakymų sistemą, panašią į tą, kurią mes naudojame per Team atsiskaitimams.
+Panaudokite ankščiau sukurtą "FormBuilder" arba "Tag" klases.
