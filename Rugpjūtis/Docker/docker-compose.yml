@@ -21,3 +21,13 @@ services:
     volumes:
       - ./src:/var/www
     # tty: true
+
+  mariadb:
+    container_name: ca-mariadb
+    image: mariadb:10.9
+    env_file:
+      - ./docker/mysql/.env
+    volumes:
+      - ./docker/mysql/data/mariadb:/var/lib/mysql
+    ports:
+      - 3307:3306
