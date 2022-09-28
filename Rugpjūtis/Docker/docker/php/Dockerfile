@@ -23,3 +23,6 @@ COPY ./conf/* /usr/local/etc/php/conf.d
 # 	&& mv composer.phar /usr/local/bin/composer
 
 COPY --from=composer:2.4.1 /usr/bin/composer /usr/bin/composer
+
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+RUN docker-php-ext-install pdo pdo_mysql
