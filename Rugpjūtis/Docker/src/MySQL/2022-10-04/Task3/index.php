@@ -18,13 +18,10 @@ $groups = [
 foreach ($users as $user) {
     if ($user['gender'] == 'Male') {
         array_push($groups['Males'], $user);
-        continue;
-    }
-    if ($user['gender'] == 'Female') {
+    } else if ($user['gender'] == 'Female') {
         array_push($groups['Females'], $user);
-        continue;
-    }
-    array_push($groups['Other'], $user);
+    } else
+        array_push($groups['Other'], $user);
 }
 
 echo "<pre>";
