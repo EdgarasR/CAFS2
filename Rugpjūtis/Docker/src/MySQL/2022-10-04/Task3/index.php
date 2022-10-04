@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/connect.php';
 
-$query = "SELECT * FROM `users` WHERE `gender` IN ('Male','Female')";
+$query = "SELECT * FROM `users` WHERE `gender` IN ('Male','Female') ORDER BY `gender`";
 
 $stmt = $dbh->prepare($query);
 
